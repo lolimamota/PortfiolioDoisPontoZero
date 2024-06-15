@@ -1,5 +1,6 @@
 import React from 'react'
 import {createGlobalStyle} from 'styled-components';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
 *{
