@@ -1,4 +1,5 @@
 import React from 'react';
+import * as S from './StyleRoute.jsx';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from '../Home/Home.jsx';
 import Projects from '../Projects/Projects.jsx';
@@ -9,11 +10,11 @@ function Router() {
   return (
     <BrowserRouter>
     <nav>
-      <ul>
+      <S.Ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/Projects'>Projects</Link></li>
         <li><Link to='/Contacts'>Contacts</Link></li>
-      </ul>
+      </S.Ul>
     </nav>
     <Routes>
       <Route path='/' element={<Home />} />
