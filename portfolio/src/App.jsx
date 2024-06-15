@@ -1,6 +1,7 @@
 import React from 'react'
 import {createGlobalStyle} from 'styled-components';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Routes from './Components/Routes/Routes.jsx';
+import SkillsAndTools from './Components/Home/SkillsAndTools.jsx';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
+    <Routes/>
     </>
   )
 }
