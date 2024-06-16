@@ -77,9 +77,10 @@ background-color: #00040b;
 width: 100%;
 height: 100vh;
 display: flex;
-justify-content: space-around;
-align-items: center;
+gap: 15vh;
+align-items: flex-start;
 flex-direction: column;
+padding-top: 2rem;
 `;
 
 export const Button = styled.button`
