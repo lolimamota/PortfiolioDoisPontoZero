@@ -11,3 +11,11 @@ color: #fff;
     color:#16E232;
 } 
 `;
+
+export const DivBtnAndP = styled.div`
+
+`;
+
+export const DivH2s = styled.div`
+
+`;
