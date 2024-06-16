@@ -1,5 +1,8 @@
 import styled from "styled-components";
+//------------------ IMPORT IMAGES: HOMEPAGE------------------
 import Background from './Image/BackgroundHome.png'
+
+//------------------ START: HOME PAGE STYLE ------------------
 
 export const Section = styled.section`
 width: 100%;
@@ -50,4 +53,37 @@ button{
     border: solid #16E232;
     color:#FFF;
 }
+`;
+
+//------------------ FINISH: HOMEPAGE STYLE ------------------
+
+//------------------ START: SKILLS AND TOOLS STYLE ------------------
+
+export const DivSkills = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+img{
+width:60%;
+}
+`;
+
+export const DivCarrousel = styled.div`
+display: flex;
+`;
+
+export const SectionSkillAndTools = styled.section`
+background-color: #00040b;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+`;
+
+export const Button = styled.button`
+display: flex;
+justify-content: flex-start;
+align-items: center;
 `;
