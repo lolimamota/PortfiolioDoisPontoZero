@@ -1,7 +1,6 @@
 import React from 'react'
 import {createGlobalStyle} from 'styled-components';
 import Routes from './Components/Routes/Routes.jsx';
-import SkillsAndTools from './Components/Home/SkillsAndTools.jsx';
 
 const GlobalStyle = createGlobalStyle`
 *{
