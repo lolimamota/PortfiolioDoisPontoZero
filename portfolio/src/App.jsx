@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: "Heebo", sans-serif;
   list-style: none;
   text-decoration: none;
+  letter-spacing: .1rem;
 }
 `;
 
