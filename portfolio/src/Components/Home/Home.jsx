@@ -1,8 +1,12 @@
 import React from 'react'
 import * as S from './StyleHome.jsx'
 import PageExtra from './SkillsAndTools.jsx'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  let navigate = useNavigate();
+
+  const handleClickSkill = () => navigate('/SkillsAndTools')
   return (
     <S.Section>
       <S.DivH2s>
@@ -12,7 +16,7 @@ function Home() {
       </S.DivH2s>
       <S.DivBtnAndP>
       <p>Currently located in Brazil, I love design and build <span className='verdinho'>Practical</span> and <span className='verdinho'>Simple</span> web pages.</p>
-      <button onClick={PageExtra}>Let's get started</button>
+      <button onClick={()=>handleClickSkill()}>Let's get started</button>
       </S.DivBtnAndP>
     </S.Section>
   )
