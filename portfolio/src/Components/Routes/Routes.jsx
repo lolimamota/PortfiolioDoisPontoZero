@@ -11,9 +11,9 @@ function Router() {
     <BrowserRouter>
     <nav>
       <S.Ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Projects'>Projects</Link></li>
-        <li><Link to='/Contacts'>Contacts</Link></li>
+        <li><Link className='linkRoute' to='/'>Home</Link></li>
+        <li><Link className='linkRoute' to='/Projects'>Projects</Link></li>
+        <li><Link className='linkRoute' to='/Contacts'>Contacts</Link></li>
       </S.Ul>
     </nav>
     <Routes>
