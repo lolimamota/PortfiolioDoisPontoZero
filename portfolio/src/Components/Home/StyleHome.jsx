@@ -64,7 +64,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 img{
-width:60%;
+width: 80%;
 }
 `;
 
@@ -77,14 +77,18 @@ background-color: #00040b;
 width: 100%;
 height: 100vh;
 display: flex;
-gap: 15vh;
+gap: 2.5rem;
 align-items: flex-start;
 flex-direction: column;
 padding-top: 2rem;
 `;
 
 export const Button = styled.button`
-display: flex;
-justify-content: flex-start;
-align-items: center;
+width: 30vw;
+height: 5vh;
+background: none;
+border: solid #16E232;
+color:#FFF;
+text-align: center;
+margin-left: .5rem;
 `;
