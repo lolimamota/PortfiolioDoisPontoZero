@@ -22,19 +22,19 @@ function SkillsAndTools() {
 
   const handleClickMBACK = () => navigate(-1);
   
-  const images = [
-    <img Title="HTML - Hypertext Markup Language" src={Html} alt="Imagem que remete ao Hypertext Markup Language" />,
-    <img Title="CSS - Cascating Style Sheet" src={Css} alt="Imagem que remete ao Cascating Style Sheet" />,
-    <img Title="JS - JavaScript program language" src={Js} alt="Imagem que remete ao JavaScript" />,
-    <img Title="React - Facebook Library" src={ReactLogo} alt="Imagem da logo do React" />,
-    <img Title="React-Router-DOM - Routes system" src={Rote} alt="Imagem que remete ao React-Router-Dom" />,
-    <img Title="Styled-Components - Cascating Style Sheet on React" src={StyledLogo} alt="Imagem da logo do Styled-Components" />,
-    <img Title="Git, Github - Tools and versioning" src={Git} alt="Imagem que remete a ação de commit" />,
-    <img Title="Cloud Computing - Machines, servers and services stored online" src={Cloud} alt="imagem que remete a computação em nuvem" />
+  const tools = [
+    { src: { Html }, alt: "Imagem que remete ao Hypertext Markup Language", title: "HTML - Hypertext Markup Language" },
+    { src: { Css }, alt: "Imagem que remete ao Cascating Style Sheet", title: "CSS - Cascating Style Sheet" },
+    { src: { Js }, alt: "Imagem que remete ao JavaScript", title: "JS - JavaScript program language" },
+    { src: { ReactLogo }, alt: "Imagem da logo do React", title: "React - Facebook Library" },
+    { src: { Rote }, alt: "Imagem que remete ao React-Router-Dom", title: "React-Router-DOM - Routes system" },
+    { src: { StyledLogo }, alt: "Imagem da logo do Styled-Components", title: "Styled-Components - Cascating Style Sheet on React" },
+    { src: { Git }, alt: "Imagem que remete a ação de commit", title: "Git, Github - Tools and versioning" },
+    { src: { Cloud }, alt: "Imagem que remete a computação em nuvem", title: "Cloud Computing - Machines, servers and services stored online" },
   ]
 
-  const [text, setText] = useState("")
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [text, setText] = useState("")
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // const nextImage = () => {
   //   setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -51,10 +51,14 @@ function SkillsAndTools() {
           <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
         </S.DivSkills>
         <S.DivCarrousel>
-          <img src={Back} alt="Foto anterior" onClick={nextImage} />
-          <img src={currentImageIndex} alt={Titulo} />
-          <h4>{Title}</h4>
-          <img src={Go} alt="Foto posterior" onClick={prevImage}/>
+          <img src={Back} alt="seta de voltar ao anterior" />
+          <div>
+              {tools.map((item) =>(
+                <img src={item.src} alt={item.alt}/>,
+                <h4>{item.title}</h4>
+              ))}
+          </div>
+          <img src={Go} alt="seta de ir para o próximo" />
         </S.DivCarrousel>
 
         
