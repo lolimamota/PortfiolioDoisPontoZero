@@ -33,16 +33,15 @@ function SkillsAndTools() {
     { src: { Cloud }, alt: "Imagem que remete a computação em nuvem", title: "Cloud Computing - Machines, servers and services stored online" },
   ]
 
-  // const [text, setText] = useState("")
-  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // const nextImage = () => {
-  //   setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  // };
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
-  // const prevImage = () => {
-  //   setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  // };
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
 
   return (
     <S.SectionSkillAndTools>
@@ -51,14 +50,14 @@ function SkillsAndTools() {
           <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
         </S.DivSkills>
         <S.DivCarrousel>
-          <img src={Back} alt="seta de voltar ao anterior" />
+          <img src={Back} alt="seta de voltar ao anterior" onClick={nextImage} />
           <div>
               {tools.map((item) =>(
                 <img src={item.src} alt={item.alt}/>,
                 <h4>{item.title}</h4>
               ))}
           </div>
-          <img src={Go} alt="seta de ir para o próximo" />
+          <img src={Go} alt="seta de ir para o próximo" onClick={prevImage} />
         </S.DivCarrousel>
 
         
