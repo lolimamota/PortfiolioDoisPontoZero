@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as S from './StyleHome.jsx';
+import Card from './Card.jsx';
 
 //------------------ IMPORT IMAGES: SKILLS AND TOOLS ------------------
 import Wordmap from './Image/wordcloud.png';
@@ -23,25 +24,15 @@ function SkillsAndTools() {
   const handleClickMBACK = () => navigate(-1);
   
   const tools = [
-    { src: { Html }, alt: "Imagem que remete ao Hypertext Markup Language", title: "HTML - Hypertext Markup Language" },
-    { src: { Css }, alt: "Imagem que remete ao Cascating Style Sheet", title: "CSS - Cascating Style Sheet" },
-    { src: { Js }, alt: "Imagem que remete ao JavaScript", title: "JS - JavaScript program language" },
-    { src: { ReactLogo }, alt: "Imagem da logo do React", title: "React - Facebook Library" },
-    { src: { Rote }, alt: "Imagem que remete ao React-Router-Dom", title: "React-Router-DOM - Routes system" },
-    { src: { StyledLogo }, alt: "Imagem da logo do Styled-Components", title: "Styled-Components - Cascating Style Sheet on React" },
-    { src: { Git }, alt: "Imagem que remete a ação de commit", title: "Git, Github - Tools and versioning" },
-    { src: { Cloud }, alt: "Imagem que remete a computação em nuvem", title: "Cloud Computing - Machines, servers and services stored online" },
+    { image:Html, altText: "Imagem que remete ao Hypertext Markup Language", title: "HTML - Hypertext Markup Language" },
+    { image:Css, altText: "Imagem que remete ao Cascating Style Sheet", title: "CSS - Cascating Style Sheet" },
+    { image:Js, altText: "Imagem que remete ao JavaScript", title: "JS - JavaScript program language" },
+    { image:ReactLogo, altText: "Imagem da logo do React", title: "React - Facebook Library" },
+    { image:Rote, altText: "Imagem que remete ao React-Router-Dom", title: "React-Router-DOM - Routes system" },
+    { image:StyledLogo, altText: "Imagem da logo do Styled-Components", title: "Styled-Components - Cascating Style Sheet on React" },
+    { image:Git, altText: "Imagem que remete a ação de commit", title: "Git, Github - Tools and versioning" },
+    { image:Cloud, altText: "Imagem que remete a computação em nuvem", title: "Cloud Computing - Machines, servers and services stored online" },
   ]
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   return (
     <S.SectionSkillAndTools>
@@ -50,14 +41,15 @@ function SkillsAndTools() {
           <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
         </S.DivSkills>
         <S.DivCarrousel>
-          <img src={Back} alt="seta de voltar ao anterior" onClick={nextImage} />
-          <div>
+          <img src={Back} alt="seta de voltar ao anterior" />
+          {/* <div>
               {tools.map((item) =>(
-                <img src={item.src} alt={item.alt}/>,
+                <img image={item.src} altText={item.alt}/>,
                 <h4>{item.title}</h4>
               ))}
-          </div>
-          <img src={Go} alt="seta de ir para o próximo" onClick={prevImage} />
+          </div> */}
+          <Card/>
+          <img src={Go} alt="seta de ir para o próximo" />
         </S.DivCarrousel>
 
         

@@ -70,6 +70,14 @@ width: 80%;
 
 export const DivCarrousel = styled.div`
 display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 40vh;
+color: #fff;
+img{
+    width: 25px;
+}
 `;
 
 export const SectionSkillAndTools = styled.section`
