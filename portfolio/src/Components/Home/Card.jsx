@@ -1,10 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
- 
-//--------------------IMPORTS-----------------
-import HtmlImage from './Image/html.png';
+import React from "react";
+import styled from 'styled-components';
+import LogoTeste from './Image/styled.png';
 
-//------------------------------ ESTILIZAÇÃO --------------------------------
+
+//--------------------ESTILIZAÇÃO------------------
 
 const Section = styled.section`
     display: flex;
@@ -14,7 +13,7 @@ const Section = styled.section`
     height: 35vh;
     gap: 1rem;
     img{
-        width: 150px;
+        width: 100px;
     };
     h4{
         text-align: center;
@@ -24,24 +23,12 @@ const Section = styled.section`
     }
 `;
 
-function Card({src, title, explanation}) {
-     const titles = [
-        {src: './Image/html.png', title: "HTML" , explanation:"Hypertext Markup Language" },
-        {src: './Image/css.png', title: "CSS" , explanation:"Cascading Style Sheet" },
-        {src: './Image/js.png', title: "JS" , explanation:"JavaScript program language" },
-        {src: './Image/react.png' , title: "React" , explanation:"Facebook Library" },
-        {src: './Image/rota.png', title: "React-Router-DOM" , explanation:"Routes system" },
-        {src: './Image/styled.png', title: "Styled-Components" , explanation:"Cascating Style Sheet on React" },
-        {src: './Image/commit-git.png', title: "Git, Github" , explanation:"Tools and versioning" },
-        {src: './Image/cloud-computing.png', title: "Cloud Computing" , explanation:"Machines, servers and services stored online" },
-      ]
-
-  return (
-    <Section>
-        <img src={src} alt={title}/>
-        <h4><span className='spanCard'>{title}</span> {explanation}</h4>
-    </Section>
-  )
+export default function Card(){
+    return(
+        <Section>
+            <img src={LogoTeste} alt="" />
+            <h3 className="spanCard">Titulo principal</h3>
+            <h6>Explicação do titulo</h6>
+        </Section>
+    )
 }
-
-export default Card
