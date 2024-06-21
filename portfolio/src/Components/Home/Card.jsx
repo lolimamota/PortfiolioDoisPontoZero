@@ -24,7 +24,7 @@ const Section = styled.section`
     }
 `;
 
-function Card({src, tittle, explanation}) {
+function Card({src, title, explanation}) {
      const titles = [
         {src: './Image/html.png', title: "HTML" , explanation:"Hypertext Markup Language" },
         {src: './Image/css.png', title: "CSS" , explanation:"Cascading Style Sheet" },
