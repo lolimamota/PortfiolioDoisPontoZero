@@ -25,7 +25,7 @@ function SkillsAndTools() {
   
   const tools = [
     { image:Html, altText: "Imagem que remete ao Hypertext Markup Language", title: "HTML - Hypertext Markup Language" },
-    { image:Css, altText: "Imagem que remete ao Cascating Style Sheet", title: "CSS - Cascating Style Sheet" },
+    { image:Css, altText: "Imagem que remete ao Cascading Style Sheet", title: "CSS - Cascating Style Sheet" },
     { image:Js, altText: "Imagem que remete ao JavaScript", title: "JS - JavaScript program language" },
     { image:ReactLogo, altText: "Imagem da logo do React", title: "React - Facebook Library" },
     { image:Rote, altText: "Imagem que remete ao React-Router-Dom", title: "React-Router-DOM - Routes system" },
@@ -41,7 +41,7 @@ function SkillsAndTools() {
           <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
         </S.DivSkills>
         <S.DivCarrousel>
-          <img src={Back} alt="seta de voltar ao anterior" />
+          <img src={Back} alt="seta de voltar ao anterior" onClick={(prevImage)=>{(prevImage + 1)}}/>
           {/* <div>
               {tools.map((item) =>(
                 <img image={item.src} altText={item.alt}/>,

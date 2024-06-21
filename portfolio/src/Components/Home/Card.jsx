@@ -24,22 +24,22 @@ const Section = styled.section`
     }
 `;
 
-function Card() {
-    // const titles = [
-    //     {title: "HTML - Hypertext Markup Language" },
-    //     {title: "CSS - Cascating Style Sheet" },
-    //     {title: "JS - JavaScript program language" },
-    //     {title: "React - Facebook Library" },
-    //     {title: "React-Router-DOM - Routes system" },
-    //     {title: "Styled-Components - Cascating Style Sheet on React" },
-    //     {title: "Git, Github - Tools and versioning" },
-    //     {title: "Cloud Computing - Machines, servers and services stored online" },
-    //   ]
+function Card({src, tittle, explanation}) {
+     const titles = [
+        {src: './Image/html.png', title: "HTML" , explanation:"Hypertext Markup Language" },
+        {src: './Image/css.png', title: "CSS" , explanation:"Cascading Style Sheet" },
+        {src: './Image/js.png', title: "JS" , explanation:"JavaScript program language" },
+        {src: './Image/react.png' , title: "React" , explanation:"Facebook Library" },
+        {src: './Image/rota.png', title: "React-Router-DOM" , explanation:"Routes system" },
+        {src: './Image/styled.png', title: "Styled-Components" , explanation:"Cascating Style Sheet on React" },
+        {src: './Image/commit-git.png', title: "Git, Github" , explanation:"Tools and versioning" },
+        {src: './Image/cloud-computing.png', title: "Cloud Computing" , explanation:"Machines, servers and services stored online" },
+      ]
 
   return (
     <Section>
-        <img src={HtmlImage} alt="" />
-        <h4><span className='spanCard'>HTML</span> - Hypertext Markup Language</h4>
+        <img src={src} alt={title}/>
+        <h4><span className='spanCard'>{title}</span> {explanation}</h4>
     </Section>
   )
 }
