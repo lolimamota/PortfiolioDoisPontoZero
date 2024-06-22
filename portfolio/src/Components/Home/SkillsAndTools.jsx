@@ -25,7 +25,7 @@ function SkillsAndTools() {
   
   const tools = [
     { image:Html, altText: "Imagem que remete ao Hypertext Markup Language", title: "HTML - Hypertext Markup Language" },
-    { image:Css, altText: "Imagem que remete ao Cascading Style Sheet", title: "CSS - Cascating Style Sheet" },
+    { image:Css, altText: "Imagem que remete ao Cascading Style Sheet", title: "CSS - Cascading Style Sheet" },
     { image:Js, altText: "Imagem que remete ao JavaScript", title: "JS - JavaScript program language" },
     { image:ReactLogo, altText: "Imagem da logo do React", title: "React - Facebook Library" },
     { image:Rote, altText: "Imagem que remete ao React-Router-Dom", title: "React-Router-DOM - Routes system" },
