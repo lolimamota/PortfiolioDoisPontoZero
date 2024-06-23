@@ -100,3 +100,12 @@ color:#FFF;
 text-align: center;
 margin-left: .5rem;
 `;
+
+export const DivCard = styled.div`
+display: flex;
+justify-content:space-around;
+align-items:center;
+gap: 2rem;
+overflow: hidden;
+flex-direction: row;
+`;
