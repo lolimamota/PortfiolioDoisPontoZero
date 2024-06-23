@@ -42,13 +42,9 @@ function SkillsAndTools() {
         </S.DivSkills>
         <S.DivCarrousel>
           <img src={Back} alt="seta de voltar ao anterior" onClick={(prevImage)=>{(prevImage + 1)}}/>
-          {/* <div>
-              {tools.map((item) =>(
-                <img image={item.src} altText={item.alt}/>,
-                <h4>{item.title}</h4>
-              ))}
-          </div> */}
-          <Card/>
+          {tools.map(card => (
+            <Card key={card.title} image={card.image} title={card.title} description={card.altText}/>
+            ))}
           <img src={Go} alt="seta de ir para o próximo" />
         </S.DivCarrousel>
 

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import LogoTeste from './Image/styled.png';
 
 
 //--------------------ESTILIZAÇÃO------------------
@@ -23,12 +22,12 @@ const Section = styled.section`
     }
 `;
 
-export default function Card(){
+export default function Card({image, title, description}){
     return(
         <Section>
-            <img src={LogoTeste} alt="" />
-            <h3 className="spanCard">Titulo principal</h3>
-            <h6>Explicação do titulo</h6>
+            <img src={image} alt={title} />
+            <h3 className="spanCard">{title}</h3>
+            <h6>{description}</h6>
         </Section>
     )
 }
