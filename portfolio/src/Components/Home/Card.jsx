@@ -14,20 +14,25 @@ const Section = styled.section`
     img{
         width: 100px;
     };
-    h4{
+    h3, h6{
         text-align: center;
-    }
+    };
     .spanCard{
         color: #16e232;
+    };
+    div{
+        width: 80vw;
     }
 `;
 
-export default function Card({image, title, description}){
+export default function Card({image, title, acronym, description}){
     return(
         <Section>
             <img src={image} alt={title} />
-            <h3 className="spanCard">{title}</h3>
+            <div>
+            <h3 className="spanCard">{acronym}</h3>
             <h6>{description}</h6>
+            </div>
         </Section>
     )
 }

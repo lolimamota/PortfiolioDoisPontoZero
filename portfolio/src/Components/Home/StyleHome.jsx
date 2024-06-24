@@ -75,9 +75,6 @@ align-items: center;
 width: 100%;
 height: 40vh;
 color: #fff;
-img{
-    width: 25px;
-}
 `;
 
 export const SectionSkillAndTools = styled.section`
@@ -103,9 +100,12 @@ margin-left: .5rem;
 
 export const DivCard = styled.div`
 display: flex;
-justify-content:space-around;
-align-items:center;
-gap: 2rem;
+transform: translateX(${props => props.changediv}%
+);
+`;
+
+export const DivTV = styled.div`
 overflow: hidden;
-flex-direction: row;
+width: 80%;
+/* background-color: ${props => props.$test}; */
 `;
