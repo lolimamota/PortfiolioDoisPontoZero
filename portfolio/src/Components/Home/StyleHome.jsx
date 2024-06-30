@@ -100,8 +100,13 @@ margin-left: .5rem;
 
 export const DivCard = styled.div`
 display: flex;
-transform: translateX(${props => props.changediv}%
-);
+/* transform: translateX(${props => props.changediv}%
+); */
+
+${props => (
+   `transform: translateX(${props.$test}%
+    );`
+)}
 `;
 
 export const DivTV = styled.div`

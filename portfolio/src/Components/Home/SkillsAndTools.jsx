@@ -32,7 +32,9 @@ function SkillsAndTools() {
     { image: StyledLogo, altText: "Imagem da logo do Styled-Components", acronym: "STYLED-COMPONENTS", title: "Cascading Style Sheet on React" },
     { image: Git, altText: "Imagem que remete a ação de commit", acronym: "GIT AND GITHUB", title: "Tools and versioning" },
     { image: Cloud, altText: "Imagem que remete a computação em nuvem", acronym: "CLOUD COMPUTING", title: "Machines, servers and services stored online" },
-  ]
+  ];
+
+  let move = 0;
 
   return (
     <S.SectionSkillAndTools>
@@ -41,15 +43,15 @@ function SkillsAndTools() {
         <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
       </S.DivSkills>
       <S.DivCarrousel>
-        <img src={Back} alt="seta de voltar ao anterior" changediv="100"/>
+        <img src={Back} alt="seta de voltar ao anterior" onClick={() => { move += 100; }}/>
         <S.DivTV>
-          <S.DivCard>
+          <S.DivCard $test={move}>
             {tools.map(card => (
               <Card key={card.title} image={card.image} title={card.altText} acronym={card.acronym} description={card.title} />
             ))}
           </S.DivCard>
         </S.DivTV>
-        <img src={Go} alt="seta de ir para o próximo" changediv="-100"/>
+        <img src={Go} alt="seta de ir para o próximo" onClick={() => { move -= 100; }} />
       </S.DivCarrousel>
 
 
