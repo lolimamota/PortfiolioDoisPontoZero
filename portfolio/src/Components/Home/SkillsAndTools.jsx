@@ -36,6 +36,15 @@ function SkillsAndTools() {
 
   let move = 0;
 
+  const moveNext = ()=>{
+    move -=100;
+  }
+  
+  const movePrev = ()=>{
+    move +=100;
+  }
+  
+
   return (
     <S.SectionSkillAndTools>
       <S.Button onClick={() => handleClickMBACK()}>Back</S.Button>
@@ -43,7 +52,7 @@ function SkillsAndTools() {
         <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
       </S.DivSkills>
       <S.DivCarrousel>
-        <img src={Back} alt="seta de voltar ao anterior" onClick={() => { move += 100; }}/>
+        <img src={Back} alt="seta de voltar ao anterior" onClick={movePrev}/>
         <S.DivTV>
           <S.DivCard $test={move}>
             {tools.map(card => (
@@ -51,7 +60,7 @@ function SkillsAndTools() {
             ))}
           </S.DivCard>
         </S.DivTV>
-        <img src={Go} alt="seta de ir para o próximo" onClick={() => { move -= 100; }} />
+        <img src={Go} alt="seta de ir para o próximo" onClick={moveNext} />
       </S.DivCarrousel>
 
 
