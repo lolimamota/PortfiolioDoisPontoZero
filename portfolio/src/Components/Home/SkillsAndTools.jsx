@@ -34,6 +34,8 @@ function SkillsAndTools() {
     { image: Cloud, altText: "Imagem que remete a computação em nuvem", acronym: "CLOUD COMPUTING", title: "Machines, servers and services stored online" },
   ];
 
+  // const [move , setMove] = useState(0)
+
   let move = 0;
 
   const moveNext = ()=>{
