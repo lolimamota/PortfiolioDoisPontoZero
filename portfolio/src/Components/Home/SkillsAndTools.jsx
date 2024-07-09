@@ -50,6 +50,7 @@ function SkillsAndTools() {
   return (
     <S.SectionSkillAndTools>
       <S.Button onClick={() => handleClickMBACK()}>Back</S.Button>
+      <h2><spam>Skills</spam> and Tools</h2>
       <S.DivSkills>
         <img src={Wordmap} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera " />
       </S.DivSkills>

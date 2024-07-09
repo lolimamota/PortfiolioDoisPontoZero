@@ -86,6 +86,14 @@ gap: 2.5rem;
 align-items: flex-start;
 flex-direction: column;
 padding-top: 2rem;
+h2{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+spam{
+        color: #16E232;
+    }
 `;
 
 export const Button = styled.button`
