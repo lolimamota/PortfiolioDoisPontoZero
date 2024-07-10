@@ -20,11 +20,40 @@ export const DivGallery = styled.div`
     width: 100%;
     height: 80vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6 , 1fr);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas: 
-    " teste1 teste1 teste2 " 
-    " teste1 teste 1 teste3 "
-    " teste4 teste5 teste3 "
-    " teste6 teste5 teste7 ";
+    "teste1 teste1 teste2" 
+    "teste1 teste1 teste3"
+    "teste4 teste5 teste3"
+    "teste6 teste5 teste7"
+    "teste8 teste9 teste9";
+    
+    .teste1{
+        grid-area: teste1;
+    }
+    .teste2{
+        grid-area: teste2;
+    }
+    .teste3{
+        grid-area: teste3;
+    }
+    .teste4{
+        grid-area: teste4;
+    }
+    .teste5{
+        grid-area: teste5;
+    }
+    .teste6{
+        grid-area: teste6;
+    }
+    .teste7{
+        grid-area: teste7;
+    }
+    .teste8{
+        grid-area: teste8;
+    }
+    .teste9{
+        grid-area: teste9;
+    }
 `;
