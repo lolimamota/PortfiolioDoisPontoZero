@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionProject = styled.section`
     color: white;
-    width: 100%;
+    border: solid pink;
     height: 100vh;
     background-color: #00040b;
     text-align: center;
@@ -13,47 +13,53 @@ export const SectionProject = styled.section`
     spam{
         color: #16E232;
     }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 `;
 
 export const DivGallery = styled.div`
-    border: solid purple;
-    width: 100%;
-    height: 80vh;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "teste1 teste1 teste2" 
-    "teste1 teste1 teste3"
-    "teste4 teste5 teste3"
-    "teste6 teste5 teste7"
-    "teste8 teste9 teste9";
+    grid-template-columns: repeat(4 , 1fr);
+    max-width: 80vw;
+    gap: .5rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .GridImageAreaRed{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .GridImageAreaPink{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .GridImageAreaOrange{
+        grid-column: -1/-4;
+        grid-row: 5/6;
+    }
+    .GridImageAreaYellow{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .GridImageAreaBlue{
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .GridImageAreaLilac{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .GridImageAreaCyan{
+        grid-column: 1/2 ;
+        grid-row: 5/6;
+    }
+    .GridImageAreaGreen{
+        grid-column: 4/5 ;
+        grid-row: 2/4 ;
+    }
     
-    .teste1{
-        grid-area: teste1;
-    }
-    .teste2{
-        grid-area: teste2;
-    }
-    .teste3{
-        grid-area: teste3;
-    }
-    .teste4{
-        grid-area: teste4;
-    }
-    .teste5{
-        grid-area: teste5;
-    }
-    .teste6{
-        grid-area: teste6;
-    }
-    .teste7{
-        grid-area: teste7;
-    }
-    .teste8{
-        grid-area: teste8;
-    }
-    .teste9{
-        grid-area: teste9;
-    }
 `;
