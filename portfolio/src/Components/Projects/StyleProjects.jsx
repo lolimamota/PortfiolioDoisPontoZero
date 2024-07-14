@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const SectionProject = styled.section`
     color: white;
-    border: solid pink;
     height: 100vh;
     background-color: #00040b;
     text-align: center;
-    padding-top: 2rem;
     h2{
         font-size: 1rem;
     }
@@ -17,6 +15,7 @@ export const SectionProject = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 5vh;
 `;
 
 export const DivGallery = styled.div`
@@ -24,7 +23,7 @@ export const DivGallery = styled.div`
     grid-template-columns: repeat(4 , 1fr);
     max-width: 80vw;
     gap: .5rem;
-    img{
+    a{
         width: 100%;
         height: 100%;
     }
@@ -60,6 +59,10 @@ export const DivGallery = styled.div`
     .GridImageAreaGreen{
         grid-column: 4/5 ;
         grid-row: 2/4 ;
+    }
+    .GridImageAreaPurple{
+        grid-column: 1/5;
+        grid-row: 6/7;
     }
     
 `;
