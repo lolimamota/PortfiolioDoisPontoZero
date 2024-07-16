@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './StyleProjects.jsx';
 
 import CorTDC from './Image/tdc.png'
@@ -24,7 +23,7 @@ function Projects() {
       <img src={CorWitcher} className='GridImageAreaLilac' alt="imagem teste" />
       <img src={CorDisney} className='GridImageAreaCyan' alt="imagem teste" />
       <img src={CorTDC} className='GridImageAreaGreen' alt="imagem teste" />
-      <img src={CorZeroUm}  alt="imagem teste" />
+      <img src={CorZeroUm}  className='GridImageAreaPurple' alt="imagem teste" />
     </S.DivGallery>
   </S.SectionProject>
   )

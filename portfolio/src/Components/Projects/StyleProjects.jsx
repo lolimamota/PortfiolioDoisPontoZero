@@ -62,7 +62,7 @@ export const DivGallery = styled.div`
     }
     .GridImageAreaPurple{
         grid-column: 1/5;
-        grid-row: 6/7;
+        grid-row: 6/15;
     }
     
 `;
