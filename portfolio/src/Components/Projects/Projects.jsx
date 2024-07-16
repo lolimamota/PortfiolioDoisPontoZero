@@ -16,25 +16,15 @@ function Projects() {
   <S.SectionProject>
     <h2>Discover the world on <spam>my Projects</spam></h2>
     <S.DivGallery>
-      <a href="https://portfolio-lorrayne.vercel.app/" target='_blank'>
       <img src={CorPortfolio} className='GridImageAreaRed' alt="imagem teste" />
-      </a>
-      <a href="https://fantastikapetshop.vercel.app/"><img src={CorFantastika} className='GridImageAreaPink' alt="imagem teste" />
-      </a>
-      <a href="https://cn-exercise.vercel.app/"><img src={CorCartoon} className='GridImageAreaOrange' alt="imagem teste" />
-      </a>
-      <a href="https://christimas-emotions.vercel.app/"><img src={CorCruzeiro} className='GridImageAreaYellow' alt="imagem teste" />
-      </a>
-      <a href="https://patriocinio-vnw.vercel.app/"><img src={CorVnW} className='GridImageAreaBlue' alt="imagem teste" />
-      </a>
-      <a href="https://the-red-project.vercel.app/"><img src={CorWitcher} className='GridImageAreaLilac' alt="imagem teste" />
-      </a>
-      <a href="https://lolimamota.github.io/AulaDisney/"><img src={CorDisney} className='GridImageAreaCyan' alt="imagem teste" />
-      </a>
-      <a href="https://lolimamota.github.io/toDeCacho/"><img src={CorTDC} className='GridImageAreaGreen' alt="imagem teste" />
-      </a>
-      <a href="https://zeroumchalengereview.vercel.app/" target='_blank' className='GridImageAreaPurple'><img src={CorZeroUm}  alt="imagem teste" />
-      </a>
+      <img src={CorFantastika} className='GridImageAreaPink' alt="imagem teste" />
+      <img src={CorCartoon} className='GridImageAreaOrange' alt="imagem teste" />
+      <img src={CorCruzeiro} className='GridImageAreaYellow' alt="imagem teste" />
+      <img src={CorVnW} className='GridImageAreaBlue' alt="imagem teste" />
+      <img src={CorWitcher} className='GridImageAreaLilac' alt="imagem teste" />
+      <img src={CorDisney} className='GridImageAreaCyan' alt="imagem teste" />
+      <img src={CorTDC} className='GridImageAreaGreen' alt="imagem teste" />
+      <img src={CorZeroUm}  alt="imagem teste" />
     </S.DivGallery>
   </S.SectionProject>
   )
