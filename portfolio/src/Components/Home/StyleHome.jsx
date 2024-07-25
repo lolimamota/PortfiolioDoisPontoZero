@@ -61,13 +61,13 @@ background-color: #00040b;
 padding: 1rem;
 width:100%;
 height: 100vh;
+color: #fff;
 
 button{
     width: 20vw;
     height: 5vh;
     background: none;
     border: solid #16E232;
-    color:#FFF;
 }
 `;
 
@@ -82,5 +82,15 @@ justify-content: center;
 border: solid red;
 img{
     width: 50px;
+}
+`;
+
+export const DivMap = styled.div`
+border:solid purple;
+display: flex;
+overflow: hidden;
+
+img{
+    width: 150px;
 }
 `;
