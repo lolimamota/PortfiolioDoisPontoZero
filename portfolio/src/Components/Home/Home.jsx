@@ -15,7 +15,7 @@ function Home() {
       <h2 className='h2menor'>Desenvolvedora Front End</h2>
       </S.DivH2s>
       <S.DivBtnAndP>
-      <p>Atualmente estou no Brasil, e gosto mesmo de desenvolver<span className='verdinho'>Praticos</span> e <span className='verdinho'>Simples</span> sites responsivos.</p>
+      <p>Atualmente estou no Brasil, gosto mesmo de desenvolver<span className='verdinho'>Praticos</span> e <span className='verdinho'>Simples</span> sites responsivos como este.</p>
       <button onClick={()=>handleClickSkill()}>Comece por aqui</button>
       </S.DivBtnAndP>
     </S.Section>
