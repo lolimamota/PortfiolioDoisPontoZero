@@ -109,4 +109,5 @@ justify-content: center;
 text-align: center;
 letter-spacing: .2rem;
 padding-top: 1rem;
+transition: all 200ms ease-in-out;
 `;
