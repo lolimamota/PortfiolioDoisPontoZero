@@ -10,13 +10,13 @@ function Home() {
   return (
     <S.Section>
       <S.DivH2s>
-      <h2>Hello!</h2>
-      <h2>I'm <span className='verdinho'>Lorrayne</span></h2>
-      <h2 className='h2menor'>Front End Developer</h2>
+      <h2>Olá!</h2>
+      <h2>Eu sou a <span className='verdinho'>Lorrayne</span></h2>
+      <h2 className='h2menor'>Desenvolvedora Front End</h2>
       </S.DivH2s>
       <S.DivBtnAndP>
-      <p>Currently located in Brazil, I love design and build <span className='verdinho'>Practical</span> and <span className='verdinho'>Simple</span> web pages.</p>
-      <button onClick={()=>handleClickSkill()}>Let's get started</button>
+      <p>Atualmente estou no Brasil, e gosto mesmo de desenvolver<span className='verdinho'>Praticos</span> e <span className='verdinho'>Simples</span> sites responsivos.</p>
+      <button onClick={()=>handleClickSkill()}>Comece por aqui</button>
       </S.DivBtnAndP>
     </S.Section>
   )

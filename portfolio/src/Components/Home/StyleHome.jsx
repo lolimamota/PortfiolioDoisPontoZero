@@ -62,12 +62,14 @@ padding: 1rem;
 width:100%;
 height: 100vh;
 color: #fff;
+font-weight: 200;
 
 button{
     width: 20vw;
     height: 5vh;
     background: none;
     border: solid #16E232;
+    color: #fff;
 }
 `;
 
@@ -76,21 +78,35 @@ export const Nuvem = styled.img`
 `;
 
 export const Tools = styled.div`
+/* border: solid red; */
 display: flex;
 align-items: center;
 justify-content: center;
-border: solid red;
 img{
     width: 50px;
 }
 `;
 
 export const DivMap = styled.div`
-border:solid purple;
+/* border:solid purple; */
 display: flex;
 overflow: hidden;
+align-items: center;
+gap: 5rem;
+padding: 2rem;
 
 img{
     width: 150px;
 }
+`;
+
+export const DivCard = styled.div`
+/* border: solid green; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+letter-spacing: .2rem;
+padding-top: 1rem;
 `;

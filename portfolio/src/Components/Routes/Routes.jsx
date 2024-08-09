@@ -12,9 +12,9 @@ function Router() {
     <BrowserRouter>
     <nav>
       <S.Ul>
-        <li><Link className='linkRoute' to='/'>Home</Link></li>
-        <li><Link className='linkRoute' to='/Projects'>Projects</Link></li>
-        <li><Link className='linkRoute' to='/Contacts'>Contacts</Link></li>
+        <li><Link className='linkRoute' to='/'>Inicio</Link></li>
+        <li><Link className='linkRoute' to='/Projects'>Projetos</Link></li>
+        <li><Link className='linkRoute' to='/Contacts'>Fale comigo</Link></li>
       </S.Ul>
     </nav>
     <Routes>

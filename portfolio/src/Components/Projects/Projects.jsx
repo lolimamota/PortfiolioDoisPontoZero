@@ -13,7 +13,7 @@ import CorZeroUm from './Image/zeroum.png';
 function Projects() {
   return (
   <S.SectionProject>
-    <h2>Discover the world on <spam>my Projects</spam></h2>
+    <h2>Descubra um mundo em <spam>meus Projetos</spam></h2>
     <S.DivGallery>
       <img src={CorPortfolio} className='GridImageAreaRed' alt="imagem teste" />
       <img src={CorFantastika} className='GridImageAreaPink' alt="imagem teste" />
