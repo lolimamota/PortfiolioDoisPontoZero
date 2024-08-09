@@ -25,14 +25,14 @@ export default function SkillAndTools() {
 
 
   const images = [
-    { src: Html, alt: "Imagem que remete ao HTML", acronym: "HTML", description: "Hypertext Markup Language" },
-    { src: Css, alt: "Imagem que remete ao CSS", acronym: "CSS", description: "Cascating Style Sheet" },
-    { src: Js, alt: "Imagem que remete ao JS", acronym: "JS", description: "JavaScript program language" },
-    { src: ReactLogo, alt: "Logo do React", acronym: "REACT", description: "Biblioteca do Facebook" },
-    { src: StyledLogo, alt: "Logo do Styled-components", acronym: "STYLED-COMPONENTS", description: "Folhas de estilo integradas ao React" },
-    { src: Git, alt: "Imagem do simbolo de ramificação da worktree", acronym: "GIT AND GITHUB", description: "Ferramentas e versionamento" },
-    { src: Rote, alt: "Imagem que remete a rotas", acronym: "REACT-ROUTER-DOM", description: "Sistema de rotas" },
-    { src: Cloud, alt: "Imagem que remete a computação em nuvem", acronym: "CLOUD COMPUTING", description: "Maquinas, servidores ou serviços armazenados online" }
+    {card: 0, src: Html, alt: "Imagem que remete ao HTML", acronym: "HTML", description: "Hypertext Markup Language" },
+    {card: 1, src: Css, alt: "Imagem que remete ao CSS", acronym: "CSS", description: "Cascating Style Sheet" },
+    {card: 2, src: Js, alt: "Imagem que remete ao JS", acronym: "JS", description: "JavaScript program language" },
+    {card: 3, src: ReactLogo, alt: "Logo do React", acronym: "REACT", description: "Biblioteca do Facebook" },
+    {card: 4, src: StyledLogo, alt: "Logo do Styled-components", acronym: "STYLED-COMPONENTS", description: "Folhas de estilo integradas ao React" },
+    {card: 5, src: Git, alt: "Imagem do simbolo de ramificação da worktree", acronym: "GIT AND GITHUB", description: "Ferramentas e versionamento" },
+    {card: 6, src: Rote, alt: "Imagem que remete a rotas", acronym: "REACT-ROUTER-DOM", description: "Sistema de rotas" },
+    {id: 7, src: Cloud, alt: "Imagem que remete a computação em nuvem", acronym: "CLOUD COMPUTING", description: "Maquinas, servidores ou serviços armazenados online" }
   ];
 
   const [cardX , setCardX] = useState(0);
@@ -55,7 +55,7 @@ export default function SkillAndTools() {
         <img src={Back} alt="Anterior" onClick={ArrowBack} />
           <S.DivMap style={{ transform: `translateX(${cardX}vw)` }}>
           {images.map( (item)=>(
-            <S.DivCard key={item.Card}>
+            <S.DivCard key={item.id}>
             <img src={item.src} alt={item.alt}/>
             <h2>{item.acronym}</h2>
             <h5>{item.description}</h5>
