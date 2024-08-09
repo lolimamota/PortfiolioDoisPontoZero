@@ -25,13 +25,13 @@ export default function SkillAndTools() {
 
 
   const images = [
-    {card: 0, src: Html, alt: "Imagem que remete ao HTML", acronym: "HTML", description: "Hypertext Markup Language" },
-    {card: 1, src: Css, alt: "Imagem que remete ao CSS", acronym: "CSS", description: "Cascating Style Sheet" },
-    {card: 2, src: Js, alt: "Imagem que remete ao JS", acronym: "JS", description: "JavaScript program language" },
-    {card: 3, src: ReactLogo, alt: "Logo do React", acronym: "REACT", description: "Biblioteca do Facebook" },
-    {card: 4, src: StyledLogo, alt: "Logo do Styled-components", acronym: "STYLED-COMPONENTS", description: "Folhas de estilo integradas ao React" },
-    {card: 5, src: Git, alt: "Imagem do simbolo de ramificação da worktree", acronym: "GIT AND GITHUB", description: "Ferramentas e versionamento" },
-    {card: 6, src: Rote, alt: "Imagem que remete a rotas", acronym: "REACT-ROUTER-DOM", description: "Sistema de rotas" },
+    {id: 0, src: Html, alt: "Imagem que remete ao HTML", acronym: "HTML", description: "Hypertext Markup Language" },
+    {id: 1, src: Css, alt: "Imagem que remete ao CSS", acronym: "CSS", description: "Cascating Style Sheet" },
+    {id: 2, src: Js, alt: "Imagem que remete ao JS", acronym: "JS", description: "JavaScript program language" },
+    {id: 3, src: ReactLogo, alt: "Logo do React", acronym: "REACT", description: "Biblioteca do Facebook" },
+    {id: 4, src: StyledLogo, alt: "Logo do Styled-components", acronym: "STYLED-COMPONENTS", description: "Folhas de estilo integradas ao React" },
+    {id: 5, src: Git, alt: "Imagem do simbolo de ramificação da worktree", acronym: "GIT AND GITHUB", description: "Ferramentas e versionamento" },
+    {id: 6, src: Rote, alt: "Imagem que remete a rotas", acronym: "REACT-ROUTER-DOM", description: "Sistema de rotas" },
     {id: 7, src: Cloud, alt: "Imagem que remete a computação em nuvem", acronym: "CLOUD COMPUTING", description: "Maquinas, servidores ou serviços armazenados online" }
   ];
 
