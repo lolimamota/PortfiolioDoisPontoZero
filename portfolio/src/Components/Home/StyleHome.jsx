@@ -95,9 +95,9 @@ align-items: center;
 /* gap: 5rem;
 padding: 2rem; */
 
-/* img{
+img{
     width: 150px;
-} */
+}
 `;
 
 export const DivCard = styled.div`
