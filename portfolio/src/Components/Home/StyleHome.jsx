@@ -78,7 +78,7 @@ export const Nuvem = styled.img`
 `;
 
 export const Tools = styled.div`
-/* border: solid red; */
+border: solid red;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -88,20 +88,20 @@ img{
 `;
 
 export const DivMap = styled.div`
-/* border:solid purple; */
+border:solid purple;
 display: flex;
 overflow: hidden;
 align-items: center;
-gap: 5rem;
-padding: 2rem;
+/* gap: 5rem;
+padding: 2rem; */
 
-img{
+/* img{
     width: 150px;
-}
+} */
 `;
 
 export const DivCard = styled.div`
-/* border: solid green; */
+border: solid green;
 display: flex;
 flex-direction: column;
 align-items: center;

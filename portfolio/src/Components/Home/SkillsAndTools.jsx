@@ -55,7 +55,7 @@ export default function SkillAndTools() {
         <img src={Back} alt="Anterior" onClick={ArrowBack} />
           <S.DivMap>
           {images.map( (item)=>(
-            <S.DivCard key={item.Card} style={{ transform: `translateX(${cardX}%)` }}>
+            <S.DivCard key={item.Card}style={{ transform: `translateX(${cardX}%)` }}>
             <img src={item.src} alt={item.alt}/>
             <h2>{item.acronym}</h2>
             <h5>{item.description}</h5>
