@@ -48,7 +48,7 @@ export default function SkillAndTools() {
   return (
     <S.SkillAndTools>
       <button onClick={()=>handleClickMBACK()}>Voltar</button>
-      <h2>Habilidades e Ferramentas</h2>
+      <h2><span className='verdinho'>Lorrayne</span></h2>
       <S.Nuvem src={Nuvem} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera" />
 
       <S.Tools>
@@ -57,8 +57,8 @@ export default function SkillAndTools() {
           {images.map( (item)=>(
             <S.DivCard key={item.Card}style={{ transform: `translateX(${cardX}%)` }}>
             <img src={item.src} alt={item.alt}/>
-            <h2>{item.acronym}</h2>
-            <h5>{item.description}</h5>
+            <h3>{item.acronym}</h3>
+            <h6>{item.description}</h6>
             </S.DivCard>
           ))}
           </S.DivMap>

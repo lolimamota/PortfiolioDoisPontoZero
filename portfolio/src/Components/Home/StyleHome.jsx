@@ -15,20 +15,17 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
 padding: 1rem;
+
 .verdinho{
     color:#16E232;
-} 
+};
 `;
 
 export const DivH2s = styled.div`
 display: flex;
 flex-direction: column;
 gap: .5rem;
-margin-right: 2rem;
 font-size: 1.2rem;
-.h2menor{
-font-size: x-large;
-}
 `;
 
 export const DivBtnAndP = styled.div`
@@ -43,7 +40,7 @@ p{
 font-size: 1rem;
 font-weight: 200;
 text-align: center;
-}
+};
 
 button{
     width: 50vw;
@@ -52,25 +49,26 @@ button{
     background: none;
     border: solid #16E232;
     color:#FFF;
-}
+};
 `;
 
 //------------------ FINISH: HOMEPAGE STYLE ------------------
 export const SkillAndTools = styled.section`
 background-color: #00040b;
-padding: 1rem;
-width:100%;
-height: 100vh;
 color: #fff;
-font-weight: 200;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 1rem;
 
 button{
     width: 20vw;
     height: 5vh;
     background: none;
     border: solid #16E232;
-    color: #fff;
-}
+    /* color: #fff; */
+    margin-right:75vw;
+};
 `;
 
 export const Nuvem = styled.img`
@@ -80,24 +78,32 @@ export const Nuvem = styled.img`
 export const Tools = styled.div`
 border: solid red;
 display: flex;
+width: 100%;
 align-items: center;
 justify-content: center;
 img{
     width: 50px;
-}
+};
 `;
 
 export const DivMap = styled.div`
 border:solid purple;
 display: flex;
 overflow: hidden;
+width:60%;
 align-items: center;
 /* gap: 5rem;
 padding: 2rem; */
 
 img{
     width: 150px;
+};
+/* h2{
+    font-weight: 100;
 }
+h5{
+    font-size: .2rem;
+} */
 `;
 
 export const DivCard = styled.div`
@@ -106,8 +112,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-text-align: center;
-letter-spacing: .2rem;
 padding-top: 1rem;
 transition: all 200ms ease-in-out;
+img{
+    padding: 1rem;
+};
 `;

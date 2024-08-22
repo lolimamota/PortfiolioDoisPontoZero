@@ -10,9 +10,9 @@ function Home() {
   return (
     <S.Section>
       <S.DivH2s>
-      <h2>Olá!</h2>
-      <h2>Eu sou a <span className='verdinho'>Lorrayne</span></h2>
-      <h2 className='h2menor'>Desenvolvedora Front End</h2>
+      <p>Olá!</p>
+      <p>Eu sou a <span className='verdinho'>Lorrayne</span></p>
+      <p>Desenvolvedora Front End</p>
       </S.DivH2s>
       <S.DivBtnAndP>
       <p>Atualmente estou no Brasil, gosto mesmo de desenvolver<span className='verdinho'>Praticos</span> e <span className='verdinho'>Simples</span> sites responsivos como este.</p>
