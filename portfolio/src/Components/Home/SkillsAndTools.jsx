@@ -6,7 +6,7 @@ import Back from './Image/Back.png';
 import Go from './Image/Go.png';
 import Nuvem from './Image/wordcloud.png';
 
-
+// import Card from './Card.jsx'
 //------------------- IMPORT DOS CARDS ---------------------
 
 import Html from './Image/html.png';
@@ -48,14 +48,14 @@ export default function SkillAndTools() {
   return (
     <S.SkillAndTools>
       <button onClick={()=>handleClickMBACK()}>Voltar</button>
-      <h2><span className='verdinho'>Lorrayne</span></h2>
+      <h2> <span className='verdinho'>Lorrayne</span> </h2>
       <S.Nuvem src={Nuvem} alt="Mapa com formato de nuvem contendo as palavras, Liderança, Pró ativa, Organizada, Metodologia Ágil, Persistência, Marketing Pessoal, Disciplina, Estudiosa, Curiosa, Facilidade em aprender, Desenvolvimento pessoal, Praticas de Comunicação não violenta, Resolução de problemas, Mentoria de carreira, Palestrante voluntária, Trabalho em equipe, Inglês básico, Interpretação de texto, Solícita e Sincera" />
 
       <S.Tools>
         <img src={Back} alt="Anterior" onClick={ArrowBack} />
-          <S.DivMap>
+          <S.DivMap> 
           {images.map( (item)=>(
-            <S.DivCard key={item.Card}style={{ transform: `translateX(${cardX}%)` }}>
+            <S.DivCard key={item.card} style={{ transform: `translateX(${cardX}%)` }}>
             <img src={item.src} alt={item.alt}/>
             <h3>{item.acronym}</h3>
             <h6>{item.description}</h6>

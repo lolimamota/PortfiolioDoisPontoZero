@@ -18,7 +18,7 @@ padding: 1rem;
 
 .verdinho{
     color:#16E232;
-};
+}
 `;
 
 export const DivH2s = styled.div`
@@ -66,7 +66,7 @@ button{
     height: 5vh;
     background: none;
     border: solid #16E232;
-    /* color: #fff; */
+    color: #fff;
     margin-right:75vw;
 };
 `;
